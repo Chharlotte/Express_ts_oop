@@ -6,7 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest --detectOpenHandles --forceExit --verbose",
     "build": "rimraf dist && rimraf artifact && tsc -b && cp .env* dist",
-    "start:dev": "NODE_ENV=development nodemon --config nodemon.json",
+    "start:dev": "nodemon --config nodemon.json",
     "start": "NODE_ENV=development ts-node src/server.ts",
     "coverage": "NODE_ENV=test rimraf coverage && jest --coverage --silent --detectOpenHandles --forceExit"
   },
